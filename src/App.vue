@@ -5,13 +5,11 @@
 </template>
 
 <script>
-import Hello from './components/Hello';
 import HeaderBanner from './components/HeaderBanner';
 
 export default {
   replace: false,
   components: {
-    Hello,
     HeaderBanner,
   },
 };

@@ -1,7 +1,7 @@
-import Hello from './components/Hello';
+import Home from './components/Home';
 
 export default {
-  '/hello': {
-    component: Hello,
+  '/': {
+    component: Home,
   },
 };
