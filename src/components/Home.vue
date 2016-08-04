@@ -34,7 +34,7 @@ export default {
   padding: 50px 70px;
   box-sizing: border-box;
   position: relative;
-  height: calc(100vh - 70px);
+  height: 700px;
 }
 .details {
   position: absolute;
@@ -68,6 +68,7 @@ export default {
 .bio-details {
   margin-top: 50px;
   color: #666666;
+  line-height: 1.7em;
 }
 button {
   height: 40px;
