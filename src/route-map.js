@@ -4,4 +4,7 @@ export default {
   '/': {
     component: Home,
   },
+  '/Home': {
+    component: Home,
+  },
 };

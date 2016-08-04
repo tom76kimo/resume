@@ -80,11 +80,12 @@ button {
   color: black;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 button:hover {
   color: white;
-  background-color: rgba(7,7,7,.7);
+  background-color: black;
   border: 3px solid white;
 }
 </style>

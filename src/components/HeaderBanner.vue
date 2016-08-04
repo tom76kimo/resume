@@ -2,7 +2,7 @@
 <div class="banner">
   <div class="logo">tom76kimo</div>
   <ul>
-    <li v-for="classEntry in classes" v-on:click="">{{classEntry}}</li>
+    <li v-for="classEntry in classes" v-link="{ path : '/' + classEntry}">{{classEntry}}</li>
   </ul>
 </div>
 </template>
