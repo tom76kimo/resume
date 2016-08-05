@@ -2,7 +2,7 @@
   <div class="container">
     <div class="details">
       <div class="avatar-container">
-        <img class="avatar" src="https://avatars3.githubusercontent.com/u/1792081?v=3&s=260">
+        <img class="avatar" src="../assets/tom-avatar.png">
       </div>
       <div class="bio">
         <div class="bio-title">Web Front-end Developer</div>
