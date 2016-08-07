@@ -1,4 +1,5 @@
 import Home from './components/Home';
+import Contact from './components/Contact';
 
 export default {
   '/': {
@@ -6,5 +7,8 @@ export default {
   },
   '/Home': {
     component: Home,
+  },
+  '/Contact': {
+    component: Contact,
   },
 };
