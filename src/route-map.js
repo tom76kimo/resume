@@ -1,5 +1,6 @@
 import Home from './components/Home';
 import Contact from './components/Contact';
+import Project from './components/Project';
 
 export default {
   '/': {
@@ -10,5 +11,8 @@ export default {
   },
   '/Contact': {
     component: Contact,
+  },
+  '/Project': {
+    component: Project,
   },
 };

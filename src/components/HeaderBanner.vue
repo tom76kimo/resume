@@ -13,7 +13,6 @@ export default {
     return {
       classes: [
         'Home',
-        'About',
         'Project',
         'Skill',
         'Experience',
