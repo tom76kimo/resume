@@ -8,7 +8,7 @@
             <div class="duration">{{project.duration}}</div>
             <div class="project-table">
                 <div class="project-details">
-                    <img class="project-avatar" src="{{project.avatar}}" height="50" />
+                    <img class="project-avatar" v-bind:src="project.avatar" height="50" />
                     <div class="project-content">{{project.content}}</div>
                 </div>
             </div>
