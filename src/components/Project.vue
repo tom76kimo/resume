@@ -8,8 +8,13 @@
             <div class="duration">{{project.duration}}</div>
             <div class="project-table">
                 <div class="project-details">
-                    <img class="project-avatar" v-bind:src="project.avatar" height="50" />
+                    <div class="project-avatar-block">
+                      <img class="project-avatar" v-bind:src="project.avatar" height="50" />
+                    </div>
                     <div class="project-content">{{project.content}}</div>
+                    <div class="project-skill">
+                      <div v-for="set in project.skillSet" class="skill">{{set}}</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -28,6 +33,7 @@ export default {
           avatar: 'https://s1.yimg.com/rz/d/yahoo_frontpage_zh-Hant-TW_s_f_p_bestfit_frontpage_2x.png',
           content: 'The main site of Yahoo Taiwan. ' +
            'Work on advertise fetching and balance the loading of site.',
+          skillSet: ['React', 'Webpack', 'Advertising', 'User Tracking', 'Modulization', 'i18n'],
         },
         {
           title: 'webpack-atomizer-loader',
@@ -35,6 +41,7 @@ export default {
           duration: 'May. 2016 - Now',
           avatar: 'https://avatars2.githubusercontent.com/u/18367805?v=3&s=200',
           content: 'A webpack loader of Atomic CSS. Accepted by ACSS organization.',
+          skillSet: ['Webpack', 'Atmoic CSS', 'Utils'],
         },
       ],
     };
@@ -47,8 +54,12 @@ export default {
     font-size: 20px;
     font-weight: 500;
 }
-.project-avatar {
+.project-avatar-block {
     display: table-cell;
+    vertical-align: middle;
+}
+.project-avatar {
+
 }
 .project-content {
     padding-left: 20px;
@@ -58,6 +69,7 @@ export default {
 }
 .project-table {
     display: table;
+    width: 100%;
     margin: 20px 0 50px;
 }
 .project-block {
@@ -76,6 +88,22 @@ export default {
 .project-details {
     display: table-row;
     position: relative;
+}
+.project-skill {
+  vertical-align: middle;
+  width: 30%;
+  display: table-cell;
+}
+.skill {
+  color: white;
+  border-radius: 5px;
+  background-color: #666666;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 100;
 }
 .duration {
     font-size: .8em;
