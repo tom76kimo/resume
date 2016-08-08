@@ -36,6 +36,16 @@ export default {
           skillSet: ['React', 'Webpack', 'Advertising', 'User Tracking', 'Modulization', 'i18n'],
         },
         {
+          title: 'Bible Reader',
+          titleLink: 'http://bible.tom76kimo.info/',
+          duration: 'May. 2014 - Now',
+          avatar: 'http://graph.facebook.com/10152748341458051/picture?width=70&height=70',
+          content: 'A website for user to record the progress of reading Bible. ' +
+          'User can easily use this website framework to build' +
+          ' your own record web app for your group or church.',
+          skillSet: ['Backbone', 'Bootstrap', 'Record'],
+        },
+        {
           title: 'webpack-atomizer-loader',
           titleLink: 'https://github.com/acss-io/webpack-atomizer-loader',
           duration: 'May. 2016 - Now',
