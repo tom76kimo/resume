@@ -3,7 +3,7 @@
         <div class="title">Projects</div>
         <div v-for="project in projects" class="project-block">
             <div class="project-title">
-                <a href="{{project.titleLink}}" target="_blank">{{project.title}}</a>
+                <a href="{{project.titleLink}}" target="_blank">{{project.title}}<i class="fa fa-link" aria-hidden="true"></i></a>
             </div>
             <div class="duration">{{project.duration}}</div>
             <div class="project-table">
@@ -127,7 +127,12 @@ export default {
     font-weight: 700;
 }
 .container {
-    margin-left: 10%;
-    margin-right: 10%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fa-link {
+  font-size: 14px;
+  margin-left: 10px;
 }
 </style>
