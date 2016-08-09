@@ -6,7 +6,7 @@
       </div>
       <div class="bio">
         <div class="bio-title">Web Front-end Developer</div>
-        <div class="bio-details">Hi, I am Tom Wu. I have 5 years of experience in Web front and back end. Highly eager to new tech on web.</div>
+        <div class="bio-details">Hi, I am Tom Wu. I have 5 years of experience in Web front and back end. Highly eager to dig new tech on web.</div>
         <div>
           <button>Download CV</button>
         </div>
