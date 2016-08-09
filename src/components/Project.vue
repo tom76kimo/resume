@@ -43,7 +43,7 @@ export default {
           content: 'A website for user to record the progress of reading Bible. ' +
           'User can easily use this website framework to build' +
           ' your own record web app for your group or church.',
-          skillSet: ['Backbone', 'Bootstrap', 'Record'],
+          skillSet: ['Backbone', 'Bootstrap', 'Recording'],
         },
         {
           title: 'webpack-atomizer-loader',
@@ -100,6 +100,8 @@ export default {
     position: relative;
 }
 .project-skill {
+  padding-left: 5px;
+  box-sizing: border-box;
   vertical-align: middle;
   width: 30%;
   display: table-cell;
