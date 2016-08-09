@@ -1,6 +1,7 @@
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Project from './components/Project';
+import Skill from './components/Skill';
 
 export default {
   '/': {
@@ -14,5 +15,8 @@ export default {
   },
   '/Project': {
     component: Project,
+  },
+  '/Skill': {
+    component: Skill,
   },
 };
