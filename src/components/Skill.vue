@@ -47,7 +47,9 @@ export default {
       skillEntry: [
         'React',
         'Vue',
+        'Nodejs',
         'ES6',
+        'Git',
         'Webpack',
         'SEO',
         'Performance Tuning',
