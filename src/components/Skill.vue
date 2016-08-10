@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <div class="title">Skill</div>
     <div class="progress-section">
       <div class="progress-container" v-for="progress in progressArray">
         <div class="progress-title">{{progress.title}}</div>
@@ -46,10 +47,13 @@ export default {
       skillEntry: [
         'React',
         'Vue',
+        'ES6',
         'Webpack',
         'SEO',
         'Performance Tuning',
         'Continuous Deploy',
+        'i18n',
+        'Flux flow',
       ],
     };
   },
@@ -62,6 +66,7 @@ export default {
   margin-right: auto;
   max-width: 1024px;
   width: 70%;
+  margin-top: 72px;
 }
 .progress-container {
   margin-top: 30px;
@@ -112,6 +117,10 @@ export default {
 .fa-check-circle {
   margin-right: 10px;
   color: #00bdbd;
+}
+.title {
+  font-size: 22px;
+  font-weight: 700;
 }
 @keyframes progress-move {
   0% {
