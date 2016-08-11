@@ -26,6 +26,9 @@ export default {
           descriptions: [
             'Web architecture design, front-end coding (JavaScript, CSS, HTML),'
              + 'library/package composing and iOS app programming.',
+            'Yahoo News - iOS app',
+            'Yahoo Taiwan Home Page',
+            'Yahoo Video Page',
           ],
         },
         {
@@ -34,8 +37,7 @@ export default {
           title: 'QNAP Inc.',
           duration: 'Sep. 2014 - Oct. 2013',
           descriptions: [
-            'Web architecture design, front-end coding (JavaScript, CSS, HTML),'
-             + 'library/package composing and iOS app programming.',
+            'Build a iPhoto-like web site to manage photos.',
           ],
         },
       ],
