@@ -3,6 +3,7 @@ import Contact from './components/Contact';
 import Project from './components/Project';
 import Skill from './components/Skill';
 import Experience from './components/Experience';
+import Education from './components/Education';
 
 export default {
   '/': {
@@ -22,5 +23,8 @@ export default {
   },
   '/Experience': {
     component: Experience,
+  },
+  '/Education': {
+    component: Education,
   },
 };
