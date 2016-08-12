@@ -21,43 +21,16 @@
 </template>
 
 <script>
+import { getSkillEntry, getProgressArray } from '../../getter';
 export default {
+  vuex: {
+    getters: {
+      skillEntry: getSkillEntry,
+      progressArray: getProgressArray,
+    },
+  },
   data() {
-    return {
-      progressArray: [
-        {
-          title: 'Javascript',
-          style: {
-            width: '75%',
-          },
-        },
-        {
-          title: 'HTML & CSS',
-          style: {
-            width: '85%',
-          },
-        },
-        {
-          title: 'Nodejs',
-          style: {
-            width: '70%',
-          },
-        },
-      ],
-      skillEntry: [
-        'React',
-        'Vue',
-        'Nodejs',
-        'ES6',
-        'Git',
-        'Webpack',
-        'SEO',
-        'Performance Tuning',
-        'Continuous Deploy',
-        'i18n',
-        'Flux flow',
-      ],
-    };
+    return {};
   },
 };
 </script>

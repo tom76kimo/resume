@@ -14,34 +14,15 @@
 </template>
 
 <script>
+import { getExperiences } from '../../getter';
 export default {
+  vuex: {
+    getters: {
+      experiences: getExperiences,
+    },
+  },
   data() {
-    return {
-      experiences: [
-        {
-          avatar: 'https://media.licdn.com/media/p/5/005/00e/318/39cf760.png',
-          position: 'Software Engineer',
-          title: 'Yahoo Inc.',
-          duration: 'Sep. 2014 - Now',
-          descriptions: [
-            'Web architecture design, front-end coding (JavaScript, CSS, HTML),'
-             + 'library/package composing and iOS app programming.',
-            'Yahoo News - iOS app',
-            'Yahoo Taiwan Home Page',
-            'Yahoo Video Page',
-          ],
-        },
-        {
-          avatar: 'https://media.licdn.com/media/p/8/005/0a5/2c7/1637158.png',
-          position: 'Front-end Engineer',
-          title: 'QNAP Inc.',
-          duration: 'Sep. 2014 - Oct. 2013',
-          descriptions: [
-            'Build a iPhoto-like web site to manage photos.',
-          ],
-        },
-      ],
-    };
+    return {};
   },
 };
 </script>

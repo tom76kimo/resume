@@ -6,12 +6,14 @@
 
 <script>
 import HeaderBanner from './components/HeaderBanner';
+import store from '../store';
 
 export default {
   replace: false,
   components: {
     HeaderBanner,
   },
+  store,
 };
 </script>
 
