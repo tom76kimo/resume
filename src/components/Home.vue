@@ -7,9 +7,7 @@
       <div class="bio">
         <div class="bio-title">Web Front-end Developer</div>
         <div class="bio-details">Hi, I am Tom Wu. I have 5 years of experience in Web front and back end. Highly eager to dig new tech on web.</div>
-        <div>
-          <button>Download CV</button>
-        </div>
+        <a href="mailto:tom76kimo@gmail.com?subject=[CV Required] I am <who I am>&body=Hi, please give me your CV :)">Require CV</a>
       </div>
     </div>
   </div>
@@ -70,7 +68,8 @@ export default {
   color: #666666;
   line-height: 1.7em;
 }
-button {
+a {
+  display: block;
   height: 40px;
   width: 160px;
   margin-top: 50px;
@@ -81,9 +80,12 @@ button {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.5s ease;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
 }
 
-button:hover {
+a:hover {
   color: white;
   background-color: black;
   border: 3px solid white;
