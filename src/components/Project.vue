@@ -18,6 +18,7 @@
                 </div>
             </div>
         </div>
+        <div class="more">More...(Review on CV)</div>
     </div>
 </template>
 
@@ -110,5 +111,9 @@ export default {
 .fa-link {
   font-size: 14px;
   margin-left: 10px;
+}
+.more {
+  padding-top: 30px;
+  height: 100px;
 }
 </style>
