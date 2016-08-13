@@ -16,7 +16,7 @@ export default {
         'Project',
         'Skill',
         'Experience',
-        'Education',
+        // 'Education',
         'Contact',
       ],
     };

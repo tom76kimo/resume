@@ -4,6 +4,7 @@
         <div class="details">
             <div class="name">Tom Wu</div>
             <div class="occupation">Front-end Developer</div>
+            <div class="email"> - tom76kimo@gmail.com</div>
         </div>
     </div>
 </template>
@@ -35,5 +36,11 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 10px;
+}
+.email {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    margin-top: 20px;
 }
 </style>
