@@ -124,10 +124,11 @@ li:hover {
   .menu-block {
     position: absolute;
     width: 100%;
-    background-color: #666666;
+    background-color: #000;
     left: 0;
     z-index: 2;
     padding: 20px 0;
+    top: 70px;
   }
 }
 </style>
