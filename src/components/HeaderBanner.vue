@@ -4,6 +4,12 @@
   <ul>
     <li v-for="classEntry in classes" v-link="{ path : '/' + classEntry}">{{classEntry}}</li>
   </ul>
+  <div class="menu" v-on:click="toggleMenu">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <div class="menu-block" v-show="showMenu">
+    <a class="menu-entry" v-on:click="toggleMenu" v-for="classEntry in classes" v-link="{ path : '/' + classEntry}">{{classEntry}}</a>
+  </div>
 </div>
 </template>
 
@@ -19,11 +25,13 @@ export default {
         // 'Education',
         'Contact',
       ],
+      showMenu: false,
     };
   },
-  methods() {
-    return {
-    };
+  methods: {
+    toggleMenu() {
+      this.showMenu = !this.showMenu;
+    },
   },
 };
 </script>
@@ -33,6 +41,20 @@ export default {
   background-color: #030303;
   display: flex;
   flex-direction: row;
+}
+.menu {
+  color: white;
+  flex: 1;
+  display: none;
+  text-align: right;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.fa-bars {
+  font-size: 30px;
+  height: 100%;
+  line-height: 70px;
+  cursor: pointer;
 }
 .logo {
   color: white;
@@ -69,5 +91,43 @@ li.avtive {
 li:hover {
   background: #eeeeee;
   color: black;
+}
+
+.menu-block {
+
+}
+
+.menu-entry {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.menu-entry:hover {
+  text-decoration: underline;
+}
+
+.menu-entry:visited {
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  ul {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .menu-block {
+    position: absolute;
+    width: 100%;
+    background-color: #666666;
+    left: 0;
+    z-index: 2;
+    padding: 20px 0;
+  }
 }
 </style>
