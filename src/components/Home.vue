@@ -46,34 +46,7 @@ export default {
   display: flex;
   flex-direction: row;
 }
-@media screen and (max-width: 1024px) {
-  .details {
-    width: initial;
-    height: initial;
-    flex-direction: column;
-  }
-  .avatar {
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
-  .bio {
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-  .bio-title {
-    text-align: center;
-  }
-  .bio-details {
-    text-align: center;
-  }
-  a {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+
 .bio {
   flex: 3;
 }
@@ -84,7 +57,6 @@ export default {
 .avatar {
   position: absolute;
   border-radius: 260px;
-  right: 50px;
   user-select: none;
 }
 .bio-title {
@@ -118,4 +90,56 @@ a:hover {
   background-color: black;
   border: 3px solid white;
 }
+
+
+
+@media screen and (max-width: 415px) {
+  .avatar {
+    width: 200px;
+  }
+
+  .bio-title {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .avatar {
+    width: 160px;
+  }
+
+  .bio-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .details {
+    width: initial;
+    height: initial;
+    flex-direction: column;
+  }
+  .avatar {
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .bio {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .bio-title {
+    text-align: center;
+  }
+  .bio-details {
+    text-align: center;
+  }
+  a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 </style>
