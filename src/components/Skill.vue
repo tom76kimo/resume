@@ -106,4 +106,13 @@ export default {
   }
 }
 
+@media screen and (max-width: 415px) {
+  .progress {
+    height: 20px;
+  }
+  .progress-container {
+    margin-top: 20px;
+  }
+}
+
 </style>
