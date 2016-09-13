@@ -7,7 +7,7 @@
       <div class="experience-title">{{ex.title}}</div>
       <div class="experience-duration">{{ex.duration}}</div>
       <ul>
-        <li class="experience-detail-entry" v-for="des in ex.descriptions">{{des}}</li>
+        <li class="experience-details-entry" v-for="des in ex.descriptions">{{des}}</li>
       </ul>
     </div>
   </div>
@@ -69,7 +69,7 @@ export default {
   top: 20px;
   right: 15px;
 }
-.experience-detail-entry {
+.experience-details-entry {
   margin-bottom: 5px;
 }
 
