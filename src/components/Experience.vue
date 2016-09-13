@@ -7,7 +7,7 @@
       <div class="experience-title">{{ex.title}}</div>
       <div class="experience-duration">{{ex.duration}}</div>
       <ul>
-        <li v-for="des in ex.descriptions">{{des}}</li>
+        <li class="experience-detail-entry" v-for="des in ex.descriptions">{{des}}</li>
       </ul>
     </div>
   </div>
@@ -38,15 +38,17 @@ export default {
 .title {
   font-size: 22px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 .experience-container {
   position: relative;
   width: 100%;
   background-color: white;
   box-shadow: 0 1px 6px rgba(0,0,0,.3);
-  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 10px 15px;
   border-radius: 6px;
+  box-sizing: border-box;
 }
 .experience-position {
   font-size: 20px;
@@ -66,5 +68,23 @@ export default {
   position: absolute;
   top: 20px;
   right: 15px;
+}
+.experience-detail-entry {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 415px) {
+  .container {
+    width: 90%;
+  }
+  .experience-container {
+    padding: 7px 11px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .experience-avatar {
+    width: 75px;
+  }
 }
 </style>
