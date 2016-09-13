@@ -17,6 +17,13 @@
                     </div>
                 </div>
             </div>
+            <div class="project-avatar-block-xs">
+              <img class="project-avatar" v-bind:src="project.avatar" height="50" />
+            </div>
+            <div class="project-content-xs">{{project.content}}</div>
+            <div class="project-skill-xs">
+              <div v-for="set in project.skillSet" class="skill">{{set}}</div>
+            </div>
         </div>
         <div class="more">More...(Review on CV)</div>
     </div>
@@ -45,6 +52,9 @@ export default {
     display: table-cell;
     vertical-align: middle;
 }
+.project-avatar-block-xs {
+  display: none;
+}
 .project-avatar {
 
 }
@@ -53,6 +63,9 @@ export default {
     box-sizing: border-box;
     display: table-cell;
     vertical-align: middle;
+}
+.project-content-xs {
+  display: none;
 }
 .project-table {
     display: table;
@@ -82,6 +95,9 @@ export default {
   vertical-align: middle;
   width: 30%;
   display: table-cell;
+}
+.project-skill-xs {
+  display: none;
 }
 .skill {
   color: white;
@@ -115,5 +131,48 @@ export default {
 .more {
   padding-top: 30px;
   height: 100px;
+}
+
+@media screen and (max-width: 415px) {
+  .title {
+    text-align: center;
+  }
+  .project-table {
+    display: none;
+  }
+  .project-block {
+    padding-top: 20px;
+    box-sizing:border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .project-title {
+    text-align: center;
+  }
+  .duration {
+    text-align: center;
+  }
+  .project-content-xs {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .project-skill-xs {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .project-avatar-block-xs {
+    display: block;
+    margin-top: 20px;
+  }
+  .project-avatar-block-xs .project-avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .more {
+    text-align: center;
+  }
 }
 </style>
