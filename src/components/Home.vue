@@ -10,6 +10,9 @@
         <a href="mailto:tom76kimo@gmail.com?subject=[CV Required] I am <who I am>&body=Hi, please give me your CV :)">Require CV</a>
       </div>
     </div>
+    <div class="logo-container">
+      <span>Built on Vue.<img class="logo" src="../assets/logo.png"></spna>
+    </div>
   </div>
 </template>
 
@@ -35,14 +38,10 @@ export default {
   height: 700px;
 }
 .details {
-  position: absolute;
+  padding-top: 50px;
   margin: auto;
   height: 300px;
   width: 1000px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   display: flex;
   flex-direction: row;
 }
@@ -55,7 +54,7 @@ export default {
   position: relative;
 }
 .avatar {
-  position: absolute;
+  display: block;
   border-radius: 260px;
   user-select: none;
 }
@@ -90,7 +89,17 @@ a:hover {
   background-color: black;
   border: 3px solid white;
 }
-
+.logo {
+  width: 30px;
+  height: 30px;
+}
+.logo-container {
+  position: absolute;
+  right: 40px;
+  bottom: 18px;
+  text-align: center;
+  color: #666666;
+}
 
 
 @media screen and (max-width: 415px) {
@@ -101,6 +110,9 @@ a:hover {
   .bio-title {
     font-size: 35px;
   }
+  .container {
+    padding: initial;
+  }
 }
 
 @media screen and (max-width: 370px) {
@@ -110,6 +122,10 @@ a:hover {
 
   .bio-title {
     font-size: 30px;
+  }
+
+  .container {
+    padding: initial;
   }
 }
 
